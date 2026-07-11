@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Namangan Rezina Plast — 3D dizayn, tokarlik, qoliplar, konveyer lentalar
+    </title>
+    <meta
+      name="description"
+      content="3D dizayn, tokarlik xizmati, plastmassa/rezina qoliplar va konveyer lentalar ishlab chiqarish bo'yicha to'liq muhandislik yechimlari."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Bu blokni <body> ning eng boshiga qo'ying -->
+<div id="nrp-preloader">
+  <img src="./assets/bgLogo.png" alt="Namangan Rezina Plast" class="nrp-preloader-logo">
+  <div class="nrp-preloader-bar">
+    <div class="nrp-preloader-bar-fill"></div>
+  </div>
+</div>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="/">
+          <div class="logo"></span>Namangan Rezina Plast</div>
+        </a>
+        <nav class="main-nav">
+          <button data-route="home" data-i18n="nav.home"></button>
+          <button data-route="konveyer" data-i18n="nav.konveyer"></button>
+          <button data-route="3d" data-i18n="nav.d3"></button>
+          <button data-route="tokar" data-i18n="nav.tokar"></button>
+          <button data-route="qoliplar" data-i18n="nav.qoliplar"></button>
+        </nav>
+        <div class="header-right">
+          <div class="lang-switch" id="langSwitchDesktop">
+            <button data-lang="uz" class="active">
+              <svg viewBox="0 0 3 2">
+                <rect width="3" height="2" fill="#1eb53a" />
+                <rect width="3" height="0.667" fill="#0099b5" />
+                <rect y="0.667" width="3" height="0.667" fill="#fff" />
+                <rect y="1.333" width="3" height="0.667" fill="#1eb53a" />
+                <rect y="0.6" width="3" height="0.13" fill="#ce1126" />
+                <rect y="1.27" width="3" height="0.13" fill="#ce1126" />
+              </svg>
+              UZ
+            </button>
+            <button data-lang="ru">
+              <svg viewBox="0 0 3 2">
+                <rect width="3" height="2" fill="#d52b1e" />
+                <rect width="3" height="1.333" fill="#0039a6" />
+                <rect width="3" height="0.667" fill="#fff" />
+              </svg>
+              RU
+            </button>
+            <button data-lang="en">
+              <svg viewBox="0 0 3 2">
+                <rect width="3" height="2" fill="#b22234" />
+                <rect y="0.154" width="3" height="0.154" fill="#fff" />
+                <rect y="0.462" width="3" height="0.154" fill="#fff" />
+                <rect y="0.769" width="3" height="0.154" fill="#fff" />
+                <rect y="1.077" width="3" height="0.154" fill="#fff" />
+                <rect y="1.385" width="3" height="0.154" fill="#fff" />
+                <rect y="1.692" width="3" height="0.154" fill="#fff" />
+                <rect width="1.2" height="1.077" fill="#3c3b6e" />
+              </svg>
+              EN
+            </button>
+          </div>
+          <a
+            href="#contact"
+            class="btn btn-primary btn-sm header-cta-desktop"
+            data-i18n="nav.cta"
+          ></a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+      <button data-route="home" data-i18n="nav.home"></button>
+      <button data-route="konveyer" data-i18n="nav.konveyer"></button>
+      <button data-route="3d" data-i18n="nav.d3"></button>
+      <button data-route="tokar" data-i18n="nav.tokar"></button>
+      <button data-route="qoliplar" data-i18n="nav.qoliplar"></button>
+      <a
+        href="#contact"
+        id="mobileCta"
+        class="btn btn-primary"
+        style="margin-top: 16px; justify-content: center"
+        data-i18n="nav.cta"
+      ></a>
+      <div class="lang-switch">
+        <button data-lang="uz" class="active">
+          <svg viewBox="0 0 3 2">
+            <rect width="3" height="2" fill="#1eb53a" />
+            <rect width="3" height="0.667" fill="#0099b5" />
+            <rect y="0.667" width="3" height="0.667" fill="#fff" />
+            <rect y="1.333" width="3" height="0.667" fill="#1eb53a" />
+            <rect y="0.6" width="3" height="0.13" fill="#ce1126" />
+            <rect y="1.27" width="3" height="0.13" fill="#ce1126" />
+          </svg>
+          UZ
+        </button>
+        <button data-lang="ru">
+          <svg viewBox="0 0 3 2">
+            <rect width="3" height="2" fill="#d52b1e" />
+            <rect width="3" height="1.333" fill="#0039a6" />
+            <rect width="3" height="0.667" fill="#fff" />
+          </svg>
+          RU
+        </button>
+        <button data-lang="en">
+          <svg viewBox="0 0 3 2">
+            <rect width="3" height="2" fill="#b22234" />
+            <rect y="0.154" width="3" height="0.154" fill="#fff" />
+            <rect y="0.462" width="3" height="0.154" fill="#fff" />
+            <rect y="0.769" width="3" height="0.154" fill="#fff" />
+            <rect y="1.077" width="3" height="0.154" fill="#fff" />
+            <rect y="1.385" width="3" height="0.154" fill="#fff" />
+            <rect y="1.692" width="3" height="0.154" fill="#fff" />
+            <rect width="1.2" height="1.077" fill="#3c3b6e" />
+          </svg>
+          EN
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <!-- HOME -->
+      <section class="route-section is-active" id="route-home">
+        <div class="nrp-hero">
+  <div class="nrp-hero-overlay"></div>
+  <div class="wrap nrp-hero-grid">
+    <div class="nrp-hero-content">
+      <div class="eyebrow" data-i18n="hero.eyebrow"></div>
+      <h1 data-i18n="hero.h1"></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="nrp-hero-actions">
+
+          <a href="#contact"
+          class="nrp-btn nrp-btn-primary"
+          data-i18n="hero.ctaPrimary"
+        ></a>
+        <button
+          class="nrp-btn nrp-btn-ghost"
+          data-route="konveyer"
+          data-i18n="hero.ctaSecondary"
+        ></button>
+      </div>
+      <div class="nrp-badge-row">
+        <div class="nrp-badge" data-i18n="hero.badge1"></div>
+        <div class="nrp-badge" data-i18n="hero.badge2"></div>
+        <div class="nrp-badge" data-i18n="hero.badge3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="section">
+          <div class="wrap">
+            <div class="section-head">
+              <div class="eyebrow" data-i18n="overview.eyebrow"></div>
+              <h2 data-i18n="overview.h2"></h2>
+              <p data-i18n="overview.p"></p>
+            </div>
+            <div class="card-grid">
+              <div class="service-card" data-route="konveyer">
+                <div class="icon-wrap">
+                  <svg
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <rect x="4" y="16" width="36" height="12" rx="6" />
+                    <circle
+                      cx="10"
+                      cy="22"
+                      r="2"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                    <circle
+                      cx="34"
+                      cy="22"
+                      r="2"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                    <path d="M14 16 V10 M22 16 V10 M30 16 V10" />
+                  </svg>
+                </div>
+                <h3 data-i18n="cards.konveyer.title"></h3>
+                <p data-i18n="cards.konveyer.desc"></p>
+                <span class="card-link" data-i18n="cards.more"></span>
+              </div>
+              <div class="service-card" data-route="3d">
+                <div class="icon-wrap">
+                  <svg
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path d="M22 4 L38 13 V31 L22 40 L6 31 V13 Z" />
+                    <path d="M6 13 L22 22 L38 13" />
+                    <path d="M22 22 V40" />
+                  </svg>
+                </div>
+                <h3 data-i18n="cards.d3.title"></h3>
+                <p data-i18n="cards.d3.desc"></p>
+                <span class="card-link" data-i18n="cards.more"></span>
+              </div>
+              <div class="service-card" data-route="tokar">
+                <div class="icon-wrap">
+                  <svg
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="22" cy="22" r="15" />
+                    <circle cx="22" cy="22" r="6" />
+                    <path d="M4 22 H10 M34 22 H40 M22 4 V10 M22 34 V40" />
+                  </svg>
+                </div>
+                <h3 data-i18n="cards.tokar.title"></h3>
+                <p data-i18n="cards.tokar.desc"></p>
+                <span class="card-link" data-i18n="cards.more"></span>
+              </div>
+              <div class="service-card" data-route="qoliplar">
+                <div class="icon-wrap">
+                  <svg
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <rect x="6" y="10" width="32" height="24" rx="2" />
+                    <path d="M14 10 V6 H30 V10 M14 34 V38 H30 V34" />
+                    <path d="M16 18 H28 V26 H16 Z" />
+                  </svg>
+                </div>
+                <h3 data-i18n="cards.qoliplar.title"></h3>
+                <p data-i18n="cards.qoliplar.desc"></p>
+                <span class="card-link" data-i18n="cards.more"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section">
+       <div class="wrap">
+  <div class="about-flex">
+    <div class="about-col-text">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="about.eyebrow"></div>
+        <h2 data-i18n="about.h2"></h2>
+      </div>
+      <p class="about-text" data-i18n="about.p"></p>
+    </div>
+    <div class="about-col-img">
+      <img
+      style="border-radius: 50%"
+        src="./assets/bgLogo.png"
+        alt="Namangan Rezina Plast zavodi"
+      />
+    </div>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-ico">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M20 4 34 10 V20 C34 29 28 34 20 37 12 34 6 29 6 20 V10 Z"/>
+          <path d="M13 20 18 25 27 14"/>
+        </svg>
+      </div>
+      <h3 data-i18n="why.reliability.title"></h3>
+      <p data-i18n="why.reliability.desc"></p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="20" cy="20" r="15"/>
+          <path d="M20 12 V28 M24 15.5 C24 13 22 12 20 12 17 12 15 13.5 15 16 15 21 25 19 25 24 25 26.5 22.5 28 20 28 17.5 28 16 26.5 16 24"/>
+        </svg>
+      </div>
+      <h3 data-i18n="why.price.title"></h3>
+      <p data-i18n="why.price.desc"></p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="20" cy="14" r="6"/>
+          <path d="M8 36 C8 27 13 22 20 22 27 22 32 27 32 36"/>
+        </svg>
+      </div>
+      <h3 data-i18n="why.responsibility.title"></h3>
+      <p data-i18n="why.responsibility.desc"></p>
+    </div>
+    <div class="why-card">
+      <div class="why-ico">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="5" y="16" width="24" height="14" rx="2"/>
+          <circle cx="11" cy="30" r="3"/>
+          <circle cx="26" cy="30" r="3"/>
+          <path d="M29 22 H35 L37 27 V30 H33"/>
+        </svg>
+      </div>
+      <h3 data-i18n="why.convenience.title"></h3>
+      <p data-i18n="why.convenience.desc"></p>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="youtube-section">
+          <div class="wrap">
+            <div class="section-head">
+              <div class="eyebrow" data-i18n="youtube.eyebrow"></div>
+              <h2 data-i18n="youtube.h2"></h2>
+              <p data-i18n="youtube.p"></p>
+            </div>
+            <div class="youtube-embed">
+              <video controls preload="metadata">
+                <source src="./assets/bg/bg1.mp4" type="video/mp4" />
+              </video>
+              <br />
+              <hr />
+              <br />
+              <video controls preload="metadata">
+                <source src="./assets/bg/bg2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3D DESIGN -->
+      <section class="route-section" id="route-3d">
+        <div class="wrap service-detail">
+          <div class="breadcrumb">
+            <span data-i18n="nav.home"></span> /
+            <span class="accent" data-i18n="nav.d3"></span>
+          </div>
+          <div class="detail-grid">
+            <div>
+              <h2 data-i18n="d3.title"></h2>
+              <p class="desc" data-i18n="d3.desc"></p>
+              <ul class="feature-list">
+                <li>
+                  <span class="num">01</span><span data-i18n="d3.f1"></span>
+                </li>
+                <li>
+                  <span class="num">02</span><span data-i18n="d3.f2"></span>
+                </li>
+                <li>
+                  <span class="num">03</span><span data-i18n="d3.f3"></span>
+                </li>
+                <li>
+                  <span class="num">04</span><span data-i18n="d3.f4"></span>
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                data-service="3D dizayn"
+                data-i18n="d3.cta"
+              ></a>
+            </div>
+            <div>
+              <img
+                class="lead-media-img"
+                src="./assets/dizayn/photo_4_2023-05-18_11-55-45.jpg"
+                alt="3D dizayn namunasi"
+              />
+              <div class="img-caption" data-i18n="d3.caption"></div>
+            </div>
+          </div>
+
+          <!-- <div class="gallery-heading">
+            <h3 data-i18n="d3.videosTitle"></h3>
+            <p data-i18n="d3.videosDesc"></p>
+          </div>
+          <div class="video-row">
+            <div class="video-frame">
+              <video
+                controls
+                preload="metadata"
+                poster="./assets/dizayn/photo_4_2023-05-18_11-55-45.jpg"
+              >
+                <source src="./assets/dizayn/video-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-frame">
+              <video
+                controls
+                preload="metadata"
+                poster="./assets/dizayn/photo_4_2023-05-18_11-55-45.jpg"
+              >
+                <source src="./assets/dizayn/video-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- TOKARLIK -->
+      <section class="route-section" id="route-tokar">
+        <div class="wrap service-detail">
+          <div class="breadcrumb">
+            <span data-i18n="nav.home"></span> /
+            <span class="accent" data-i18n="nav.tokar"></span>
+          </div>
+          <div class="detail-grid">
+            <div>
+              <div class="detail-art">
+                <svg
+                  viewBox="0 0 400 260"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="20"
+                    y="120"
+                    width="360"
+                    height="16"
+                    fill="#1f2732"
+                    stroke="#2a3340"
+                  />
+                  <rect
+                    x="50"
+                    y="70"
+                    width="60"
+                    height="120"
+                    fill="#1f2732"
+                    stroke="#4fb3d9"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="80"
+                    cy="130"
+                    r="46"
+                    stroke="#4fb3d9"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="80" cy="130" r="10" fill="#e8590c" />
+                  <rect
+                    x="150"
+                    y="118"
+                    width="150"
+                    height="24"
+                    fill="none"
+                    stroke="#8b93a0"
+                    stroke-dasharray="4 3"
+                  />
+                  <path d="M300 130 H360" stroke="#4fb3d9" stroke-width="1.5" />
+                  <path
+                    d="M320 100 L360 130 L320 160"
+                    fill="none"
+                    stroke="#e8590c"
+                    stroke-width="2"
+                  />
+                  <text
+                    x="150"
+                    y="105"
+                    fill="#8b93a0"
+                    font-family="IBM Plex Mono"
+                    font-size="10"
+                  >
+                    ⌀ 42.0 ±0.01
+                  </text>
+                </svg>
+                <div class="img-caption" data-i18n="tokar.caption"></div>
+              </div>
+            </div>
+            <div>
+              <h2 data-i18n="tokar.title"></h2>
+              <p class="desc" data-i18n="tokar.desc"></p>
+              <ul class="feature-list">
+                <li>
+                  <span class="num">01</span><span data-i18n="tokar.f1"></span>
+                </li>
+                <li>
+                  <span class="num">02</span><span data-i18n="tokar.f2"></span>
+                </li>
+                <li>
+                  <span class="num">03</span><span data-i18n="tokar.f3"></span>
+                </li>
+                <li>
+                  <span class="num">04</span><span data-i18n="tokar.f4"></span>
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                data-service="Tokarlik xizmati"
+                data-i18n="tokar.cta"
+              ></a>
+            </div>
+          </div>
+
+          <div class="gallery-heading">
+            <h3 data-i18n="tokar.galleryTitle"></h3>
+            <p data-i18n="tokar.galleryDesc"></p>
+          </div>
+          <div class="photo-grid" id="tokarPhotoGrid"></div>
+
+          <div class="gallery-heading">
+            <h3 data-i18n="tokar.videosTitle"></h3>
+            <p data-i18n="tokar.videosDesc"></p>
+          </div>
+          <div class="video-row" id="tokarVideoRow">
+            <div class="video-frame">
+              <video controls preload="metadata">
+                <source src="./assets/tokar/video-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-frame">
+              <video controls preload="metadata">
+                <source src="./assets/tokar/video-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QOLIPLAR -->
+      <section class="route-section" id="route-qoliplar">
+        <div class="wrap service-detail">
+          <div class="breadcrumb">
+            <span data-i18n="nav.home"></span> /
+            <span class="accent" data-i18n="nav.qoliplar"></span>
+          </div>
+          <div class="detail-grid">
+            <div>
+              <h2 data-i18n="qoliplar.title"></h2>
+              <p class="desc" data-i18n="qoliplar.desc"></p>
+              <ul class="feature-list">
+                <li>
+                  <span class="num">01</span
+                  ><span data-i18n="qoliplar.f1"></span>
+                </li>
+                <li>
+                  <span class="num">02</span
+                  ><span data-i18n="qoliplar.f2"></span>
+                </li>
+                <li>
+                  <span class="num">03</span
+                  ><span data-i18n="qoliplar.f3"></span>
+                </li>
+                <li>
+                  <span class="num">04</span
+                  ><span data-i18n="qoliplar.f4"></span>
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                data-service="Qoliplar"
+                data-i18n="qoliplar.cta"
+              ></a>
+            </div>
+            <div>
+              <div class="detail-art">
+                <svg
+                  viewBox="0 0 400 280"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="40"
+                    y="40"
+                    width="150"
+                    height="90"
+                    fill="none"
+                    stroke="#4fb3d9"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="70"
+                    y="60"
+                    width="90"
+                    height="50"
+                    fill="none"
+                    stroke="#e8590c"
+                    stroke-width="1.5"
+                    stroke-dasharray="4 3"
+                  />
+                  <path
+                    d="M190 60 H240 M190 110 H240"
+                    stroke="#8b93a0"
+                    stroke-dasharray="3 4"
+                  />
+                  <rect
+                    x="240"
+                    y="40"
+                    width="150"
+                    height="90"
+                    fill="none"
+                    stroke="#4fb3d9"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="270"
+                    y="60"
+                    width="90"
+                    height="50"
+                    fill="#1f2732"
+                    stroke="#e8590c"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M60 170 Q 100 140 140 170 T 220 170 T 300 170 T 380 170"
+                    stroke="#4fb3d9"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                  <text
+                    x="40"
+                    y="205"
+                    fill="#8b93a0"
+                    font-family="IBM Plex Mono"
+                    font-size="10"
+                  >
+                    PLASTIK / REZINA — Ø tol. 0.05
+                  </text>
+                </svg>
+                <div class="img-caption" data-i18n="qoliplar.caption"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-heading">
+            <h3 data-i18n="qoliplar.galleryTitle"></h3>
+            <p data-i18n="qoliplar.galleryDesc"></p>
+          </div>
+          <div class="photo-grid cols-3" id="qoliplarPhotoGrid"></div>
+
+          <div class="gallery-heading">
+            <h3 data-i18n="qoliplar.videosTitle"></h3>
+            <p data-i18n="qoliplar.videosDesc"></p>
+          </div>
+          <div class="video-row">
+            <div class="video-frame">
+              <video controls preload="metadata">
+                <source src="./assets/qoliplar/video-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-frame">
+              <video controls preload="metadata">
+                <source src="./assets/qoliplar/video-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONVEYER -->
+      <section class="route-section" id="route-konveyer">
+        <div class="wrap service-detail">
+          <div class="breadcrumb">
+            <span data-i18n="nav.home"></span> /
+            <span class="accent" data-i18n="nav.konveyer"></span>
+          </div>
+
+          <!-- Spetsifikatsiya jadvali — birinchi -->
+          <div class="table-block">
+            <div class="gallery-heading" style="margin-top: 8px">
+              <h3 data-i18n="konveyer.tableTitle"></h3>
+              <p data-i18n="konveyer.tableDesc"></p>
+            </div>
+            <div class="table-scroll">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="konveyer.th1">№</th>
+                    <th data-i18n="konveyer.th2">Belgilanishi</th>
+                    <th data-i18n="konveyer.th3">Turi</th>
+                    <th data-i18n="konveyer.th4">Kengligi (mm)</th>
+                    <th data-i18n="konveyer.th5">Qatlamlar soni</th>
+                    <th data-i18n="konveyer.th6">Gazlama turi</th>
+                    <th data-i18n="konveyer.th7">Ustki qoplama (mm)</th>
+                    <th data-i18n="konveyer.th8">Pastki qoplama (mm)</th>
+                    <th data-i18n="konveyer.th9">Rezina markasi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2Л-1000-5-ТК300-2-6-2-АРБ</td>
+                    <td>2Л</td>
+                    <td>1000</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2.1-1000-5-ТК300-2-8-2-АРБ</td>
+                    <td>2.1</td>
+                    <td>1000</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1.2-1200-5-ТК300-2-6-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1200</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>1.2-1200-5-ТК300-2-8-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1200</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>1.2-1200-4-ТК300-2-6-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1200</td>
+                    <td>4</td>
+                    <td>ТК300</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1.2-1400-5-ТК300-2-6-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1400</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>1.2-1400-5-ТК300-2-8-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1400</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>1.2-1600-5-ТК300-2-8-2-АРБ</td>
+                    <td>1.2</td>
+                    <td>1600</td>
+                    <td>5</td>
+                    <td>ТК300</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>АРБ</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>2.1-650-3-ТК200-2-6-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>650</td>
+                    <td>3</td>
+                    <td>ТК200</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>2.1-650-3-ТК200-2-8-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>650</td>
+                    <td>3</td>
+                    <td>ТК200</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>2.1-800-3-ТК200-2-5-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>3</td>
+                    <td>ТК200</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>2.1-800-3-ТК200-2-6-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>3</td>
+                    <td>ТК200</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>2.1-800-4-ТК200-2-5-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>4</td>
+                    <td>ТК200</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>2.1-800-4-ТК200-2-6-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>4</td>
+                    <td>ТК200</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>2.1-800-4-ТК200-2-8-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>4</td>
+                    <td>ТК200</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>2.1-800-5-ТК200-2-6-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>5</td>
+                    <td>ТК200</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>2.1-800-5-ТК200-2-8-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>5</td>
+                    <td>ТК200</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>2.1-800-6-ТК200-2-6-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>6</td>
+                    <td>ТК200</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>2.1-800-6-ТК200-2-8-2-БРБ</td>
+                    <td>2.1</td>
+                    <td>800</td>
+                    <td>6</td>
+                    <td>ТК200</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>БРБ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-hint">◄ &nbsp;&nbsp; ►</div>
+          </div>
+          <br />
+          <div class="conveyor-grid">
+            <div class="conveyor-item">
+              <img
+                src="https://i.pinimg.com/736x/08/f1/cb/08f1cb7cf04feef776b6c191f2ed50b0.jpg"
+                alt="Konveyer lenta 1"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://www.gteek.com/image/catalog/Conveyor%20Belts/Rubber-EP/rubber-conveyor-belt-structure.jpg"
+                alt="Konveyer lenta 2"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://i.pinimg.com/736x/00/c6/a7/00c6a7d457ef53314c5ba04313b1b666.jpg"
+                alt="Konveyer lenta 3"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://i.pinimg.com/736x/20/53/87/205387a72323039a26f396bc931026ce.jpg"
+                alt="Konveyer lenta 4"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuT1iuRvK-g3tyA4Cf2ldSoQk4tibqnqzKSk-7wkzk-WnqHs231wRmhiw&s=10"
+                alt="Konveyer lenta 5"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://www.bullflexrubbers.com/wp-content/uploads/2023/03/Steel-Cord.jpeg"
+                alt="Konveyer lenta 6"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZggNpkfjV6VIPDYKFZVC2QJUdox2tFxst61B12yYLRLk6VuiP1aj94yO&s=10"
+                alt="Konveyer lenta 7"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/620bb45d77a5fa548941428e/1653337049646-BORBK5MAKB41E171BRMK/Yard-and-Stock-01.png"
+                alt="Konveyer lenta 8"
+              />
+            </div>
+            <div class="conveyor-item">
+              <img
+                src="https://www.imarcgroup.com/blogs/files/a0a20972-997e-45db-8ec4-f401deb45fa8conveyor-belt_11zon.webp"
+                alt="Konveyer lenta 9"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT (always visible) -->
+      <section class="contact-section" id="contact">
+        <div class="wrap contact-grid">
+          <div class="contact-info">
+            <div class="eyebrow" data-i18n="contact.eyebrow"></div>
+            <h2 data-i18n="contact.h2"></h2>
+            <p data-i18n="contact.p"></p>
+
+            <div class="info-row">
+              <div class="ico">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path
+                    d="M6 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 13l4 2v4a2 2 0 0 1-2 2C9.6 21 3 14.4 3 6a2 2 0 0 1 2-2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span class="lbl" data-i18n="contact.phoneLbl"></span
+                ><span class="val mono">+998 99 400 55 18</span> <br />
+                <span class="val mono">+998 90 902 97 95</span> <br />
+                <span class="val mono">+998 91 341 39 00</span> <br />
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="ico">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </div>
+              <div>
+                <span class="lbl" data-i18n="contact.emailLbl"></span
+                ><span class="val mono">Istiqlol2000@mail.ru</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="ico">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path
+                    d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"
+                  />
+                  <circle cx="12" cy="9.5" r="2.4" />
+                </svg>
+              </div>
+              <div>
+                <span class="lbl" data-i18n="contact.addrLbl"></span
+                ><span class="val" data-i18n="contact.addrVal"></span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="ico">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div>
+                <span class="lbl" data-i18n="contact.hoursLbl"></span
+                ><span class="val" data-i18n="contact.hoursVal"></span>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a
+                href="https://t.me/Namangan_Rezina_Plast_uz"
+                target="_blank"
+                rel="noopener"
+                aria-label="Telegram"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path d="m21 4-3 17-6-4-3 3-1-6-6-3z" />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/998913413900"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path d="M4 20l1.5-4.3A8 8 0 1 1 9 18.5L4 20z" />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com/Namangan_Rezina_Plast_uz"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17"
+                    cy="7"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="lead-form" id="leadForm">
+            <div class="form-row">
+              <label data-i18n="form.name"></label>
+              <input type="text" id="f_name" required />
+            </div>
+            <div class="form-row">
+              <label data-i18n="form.phone"></label>
+              <input
+                type="tel"
+                id="f_phone"
+                placeholder="+998 __ ___ __ __"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label data-i18n="form.service"></label>
+              <select id="f_service">
+                <option
+                  data-i18n="nav.konveyer"
+                  value="Konveyer lentalar"
+                ></option>
+                <option data-i18n="nav.d3" value="3D dizayn"></option>
+                <option data-i18n="nav.tokar" value="Tokarlik xizmati"></option>
+                <option data-i18n="nav.qoliplar" value="Qoliplar"></option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label data-i18n="form.message"></label>
+              <textarea id="f_message"></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="width: 100%; justify-content: center"
+              data-i18n="form.submit"
+            ></button>
+            <p class="form-note" data-i18n="form.note"></p>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo">
+              <span class="dot"></span>Namangan Rezina Plast
+            </div>
+            <p data-i18n="footer.about"></p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.servicesTitle"></h4>
+            <ul>
+              <li>
+                <a href="#" data-route="konveyer" data-i18n="nav.konveyer"></a>
+              </li>
+              <li><a href="#" data-route="3d" data-i18n="nav.d3"></a></li>
+              <li><a href="#" data-route="tokar" data-i18n="nav.tokar"></a></li>
+              <li>
+                <a href="#" data-route="qoliplar" data-i18n="nav.qoliplar"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.contactTitle"></h4>
+            <ul>
+              <li class="mono">+998 91 341 39 00</li>
+              <li class="mono">+998 90 902 97 95</li>
+              <li class="mono">+998 99 400 55 18</li>
+
+              <li class="mono">Istiqlol2000@mail.ru</li>
+              <li data-i18n="contact.addrVal"></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.mapTitle"></h4>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps?q=41.311081,69.240562&z=13&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >&copy; <span id="year"></span> Namangan Rezina Plast.
+            <span data-i18n="footer.rights"></span
+          ></span>
+          <span data-i18n="footer.made"></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
