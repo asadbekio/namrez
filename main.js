@@ -13,6 +13,12 @@ window.addEventListener('load', function () {
 });
 const I18N = {
   uz: {
+    "qoliplart": {
+  "plastikTitle": "Plastmassa idishlar",
+  "plastikDesc": "Yuqori sifatli plastmassa idishlar ishlab chiqaramiz.",
+  "polikTitle": "Moshina poliklari",
+  "polikDesc": "Avtomobillar uchun rezina/plastik poliklar ishlab chiqaramiz."
+},
     nav: {
       home: 'Bosh sahifa',
       d3: '3D dizayn',
@@ -176,6 +182,12 @@ const I18N = {
     },
   },
   ru: {
+    "qoliplart": {
+  "plastikTitle": "Пластиковые изделия",
+  "plastikDesc": "Производим высококачественные пластиковые изделия.",
+  "polikTitle": "Автомобильные коврики",
+  "polikDesc": "Производим резиновые/пластиковые коврики для автомобилей."
+},
     nav: {
       home: 'Главная',
       d3: '3D-дизайн',
@@ -338,6 +350,12 @@ const I18N = {
     },
   },
   en: {
+    "qoliplar": {
+  "plastikTitle": "Plastic products",
+  "plastikDesc": "We manufacture high-quality plastic products.",
+  "polikTitle": "Car mats",
+  "polikDesc": "We manufacture rubber/plastic mats for vehicles."
+},
     nav: {
       home: 'Home',
       d3: '3D Design',
